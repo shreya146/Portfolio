@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -89,7 +89,15 @@ section{
   margin-top: 30px;
   transition: 0.5s ease;
 }
-
+/* .btn btn-form{
+  font-size: 20px;
+  background-color: #3a6cf4;
+} */
+.buttonmsg{
+  font-size: 20px;
+  width: 200px;
+  background-color: #3a6cf4;
+}
 .btn:hover{
   background: #235bf6;
 }
@@ -238,8 +246,10 @@ body{
   font-size: 1em;
 }
 
+/* Education */
+
 .theme {
-  background-color: #000;
+  background-color: rgb(0, 0, 0);
 }
 
 .theme .title {
@@ -253,12 +263,15 @@ body{
 }
 
 .education {
-  color: #fff;
-  background-color: #111;
+  /* color: #fff;
+  background-color:#000016; */
+  background-color: #fff;
+  color:#000016;
   padding: 2rem;
   text-align: center;
   border-radius: 1rem;
   transition: all 300ms ease-in-out;
+  width: 100vh;
 }
 
 .education span {
@@ -274,28 +287,35 @@ body{
 
 .education p {
   font-size: 0.8rem;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
+  color:#000016;
 }
-#educations {
+/* #educations {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   
-}
-
+} */
 .education:hover {
-  background-color: var(--customColor);
+  /* background-color: var(--customColor); */
+  /* background-color: #e3a324; */
+  /* background-color: #e3a324; */
+  background-color: skyblue;
+
 }
 
 .education span:hover{
   color: #fff;
+  /* color:#000016; */
 }
-
-
 .education:hover span {
-  color: #fff;
+  /* color: #fff; */
+  color:#000016;
 }
+
+/* SKILLS */
+
 .skills{
-  background: #000016;
+  background: white;
 }
 
 .skills .content{
@@ -303,7 +323,7 @@ body{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color:black solid;
   margin-top: 20px;
 }
 
@@ -383,7 +403,7 @@ body{
   width: 80%;
   background: #ec69aa;
 }
-.services .content{
+.project .content{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -396,8 +416,8 @@ body{
   width: 80%;
 }
 
-.services .content .card{
-  background: #fff;
+.project .content .card{
+  background: black solid;
   width: 340px;
   margin: 10px;
   padding: 25px;
@@ -408,33 +428,177 @@ body{
   border-radius: 10px;
 }
 
-.services .content .card .service-icon{
+.project .content .card .service-icon{
   color: #3a6cf4;
   font-size: 8em;
   text-align: center;
   transition: transform 0.5s ease;
 }
 
-.services .content .card:hover .service-icon{
+.project .content .card:hover .service-icon{
   transform: translateY(-10px);
 }
 
-.services .content .card .info{
+.project .content .card .info{
   text-align: center;
 }
 
-.services .content .card .info h3{
+.project .content .card .info h3{
   color: #3a6cf4;
   font-size: 1.2em;
   font-weight: 700;
   margin: 10px;
 }
-
-.work{
-  background: #000016;
+/* weather app */
+.container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: rgba(0, 0, 0, 0.546);
+  /* filter: blur(5px); */
+  padding: 10px;
+  border-radius: 20px;
+  /* width: 360px; */
 }
 
-.work .content{
+.outercontainer{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: #0c73b8;
+  border-radius: 20px;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  padding: 2vh;
+}
+.input-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  font-size: 17px;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 30px;
+  /* width: 350px; */
+  border: none;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100%;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+  /* font-weight: 600; */
+}
+
+.search {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 0px;
+  font-weight: 600;
+}
+
+.search:hover {
+  transform: rotate(720deg);
+  transition: all 1s;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+button {
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 1vh;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 0px;
+  font-weight: 600;
+}
+
+button:hover {
+  /* transform: rotate(720deg); */
+  /* transition: all 1s; */
+  cursor: pointer;
+  background-color: pink;
+  color: white;
+}
+
+#city-error {
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding-left: 40px;
+  color: rgb(31, 210, 255);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#weathercard {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+#weathercard img {
+  width: 160px;
+}
+
+
+
+#placetemp {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: yellow;
+  font-weight: 700;
+}
+
+#weathertype {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(184, 184, 184);
+}
+
+#displaycityname {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.innercontainer{
+  font-size: 3vh;
+}
+/* weather app closes */
+
+/* Calculatior open */
+#sspecial{
+  width: 15vh;
+}
+/* Calculator close */
+
+.certificate{
+  background:#000016;
+}
+
+.certificate .content{
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -442,12 +606,12 @@ body{
   margin-top: 20px;
 }
 
-.work .content .card{
+.certificate .content .card{
   width: 340px;
   margin: 15px;
 }
 
-.work .content .card .card-img{
+.certificate .content .card .card-img{
   position: relative;
   width: 100%;
   height: 260px;
@@ -455,7 +619,7 @@ body{
   border-radius: 10px;
 }
 
-.work .content .card .card-img img{
+.certificate .content .card .card-img img{
   position: absolute;
   top: 0;
   left: 0;
@@ -466,10 +630,12 @@ body{
   transition: 0.5s ease;
 }
 
-.work .content .card .card-img img:hover{
+.certificate .content .card .card-img img:hover{
   transform: scale(1.2);
 }
-
+.contact{
+  background-color: #000016;
+}
 .contact .content{
   display: flex;
   justify-content: center;

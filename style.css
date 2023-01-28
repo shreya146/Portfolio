@@ -281,12 +281,12 @@ body{
 }
 
 .education h2 {
-  font-size: 1rem;
+  font-size: 3vh;
   margin-bottom: 1rem;
 }
 
 .education p {
-  font-size: 0.8rem;
+  font-size: 3vh;
   /* color: #f1f1f1; */
   color:#000016;
 }
@@ -467,7 +467,10 @@ body{
   display: flex;
   flex-direction: column;
   width: 320px;
-  background-color: #0c73b8;
+  background-image: linear-gradient(blue,white,black);
+  /* background-color: #0c73b8; */
+  /* background-color: #235bf6; */
+  /* background-color: #4e9eff; */
   border-radius: 20px;
   margin-left: 2vh;
   margin-right: 2vh;
@@ -538,9 +541,12 @@ button:hover {
   /* transform: rotate(720deg); */
   /* transition: all 1s; */
   cursor: pointer;
-  background-color: pink;
+  background-color: red;
   color: white;
 }
+
+
+
 
 #city-error {
   display: none;
@@ -593,6 +599,69 @@ button:hover {
   width: 15vh;
 }
 /* Calculator close */
+
+/* pms open */
+
+.reading{
+     height: 40px;
+  width: 24vh;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding: 1vh;
+  padding-bottom: 1vh;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 0px;
+  font-weight: 600; 
+}
+.reading:hover{
+  background-color: red;
+  color: white;
+  width:24vh;
+}
+
+/* .readanchor{
+  width: 20vh;
+  background-color: thistle;
+  color: #000;
+}
+.readanchor:hover{
+  width: 20vh;
+  background-color: white;
+  color: red;
+} */
+
+/* .readmore a{ */
+  /* height: 50px;
+  width: 24vh;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 1vh;
+  padding-bottom: 1vh;
+  margin-bottom: 1vh;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 0px;
+  font-weight: 600; */
+    /* background-color: #0c73b8;
+    color: #ccc;
+    /* height: 40px; */
+    /* width: 24vh;
+    font-size: 40px; */
+/* } */
+/* .readmore:hover{
+  background-color: black;
+  color: white;
+  width:24vh;
+} */ 
+
+/* pms close */
 
 .certificate{
   background:#000016;
